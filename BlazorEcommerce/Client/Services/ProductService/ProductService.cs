@@ -1,4 +1,5 @@
 ﻿
+using BlazorEcommerce.Shared;
 
 namespace BlazorEcommerce.Client.Services.ProductService
 {
