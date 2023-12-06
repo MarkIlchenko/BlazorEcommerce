@@ -21,6 +21,9 @@ namespace BlazorEcommerce.Server.Services.ProductService
                     .ThenInclude(v => v.Edition)
                     .FirstOrDefaultAsync(p => p.Id == productId);
 
+                product.Views++;
+                await _context.SaveChangesAsync();
+
                 if (product == null)
                 {
                     response.Success = false;
