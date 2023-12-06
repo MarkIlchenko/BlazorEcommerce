@@ -22,5 +22,6 @@ namespace BlazorEcommerce.Shared
 
         //public List<Edition> Editions { get; set; }
         public List<ProductVariant> Variants { get; set; } = new List<ProductVariant>();
+        public int Views { get; set; }
     }
 }

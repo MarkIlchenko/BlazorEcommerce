@@ -2,6 +2,7 @@
 @page "/{categoryUrl}"
 @inject IProductService ProductService
 @inject ISyncLocalStorageService LocalStorage
+@inject IStatsService StatsService
 
 <PageTitle>My Shop</PageTitle>
 
@@ -21,5 +22,8 @@
     protected override async Task OnParametersSetAsync()
     {
         await ProductService.GetProducts(CategoryUrl);
+
+        await StatsService.IncrementVisits();
+        await StatsService.GetVisits();
     }
 }

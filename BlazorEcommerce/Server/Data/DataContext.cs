@@ -10,6 +10,7 @@ namespace BlazorEcommerce.Server.Data
         }
 
         public DbSet<Edition> Editions { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -256,5 +257,7 @@ namespace BlazorEcommerce.Server.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Shared.Stats> Stats { get; set; }
     }
 }

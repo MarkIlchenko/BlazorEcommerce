@@ -10,6 +10,7 @@ using Blazored.LocalStorage;
 using Blazored.Toast;
 using BlazorEcommerce.Client.Services.CartService;
 using Microsoft.AspNetCore.Components.Authorization;
+using BlazorEcommerce.Client.Services.StatsService;
 
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -24,6 +25,7 @@ builder.Services.AddBlazoredToast();
 builder.Services.AddOptions();
 builder.Services.AddAuthorizationCore();
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
+builder.Services.AddScoped<IStatsService, StatsService>();
 
 builder.Services.AddScoped<ICartService, CartService>();
 
