@@ -129,6 +129,14 @@ namespace BlazorEcommerce.Server.Data
                         Title = "Super Nintendo Entertainment System",
                         Description = "The Super Nintendo Entertainment System (SNES), also known as the Super NES or Super Nintendo, is a 16-bit home video game console developed by Nintendo that was released in 1990 in Japan and South Korea.",
                         ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/e/ee/Nintendo-Super-Famicom-Set-FL.jpg",
+                    },
+                    new Product
+                    {
+                        Id = 12,
+                        CategoryId = 1,
+                        Title = "Вісім крафтових історій",
+                        Description = "Одного дня у звичайній школі учні отримують зовсім не звичайне завдання від свого учителя інформатики — написати твір про робітничі професії. І не просто твір, а цілу історію, з міфами та легендами, з містичними деталями. Здавалося б, що може бути цікавого в таких спеціальностях? Що саме робить їх незамінними, престижними, загадковими і ненудними? Спершу діти ставляться до цього скептично, але електрик, що виявляється справжнісіньким новітнім Прометеєм, колишній шахтар, що наче той гном із казки шукав колись під землею безцінні скарби, столяр, що вміє розмовляти з деревом, та інші представники професій, де потрібно працювати чи щось виготовляти своїми руками, змушують їх усвідомити, що кожен фах — поважний, престижний і відповідальний.",
+                        ImageUrl = "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/9/7/978-966-448-221-6_2_cr.jpg",
                     }
             );
 

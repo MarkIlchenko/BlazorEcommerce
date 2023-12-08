@@ -31,5 +31,10 @@ namespace BlazorEcommerce.Client.Services.ProductService
 
             ProductChanged.Invoke();
         }
+
+        public async Task<List<Product>> SearchProducts(string searchText)
+        {
+            return await _http.GetFromJsonAsync<List<Product>>($"api/Product/Search/{searchText}");
+        }
     }
 }
